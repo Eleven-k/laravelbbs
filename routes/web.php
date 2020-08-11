@@ -38,4 +38,4 @@ Route::post('email/resend', 'Auth\VerificationController@resend')->name('verific
 // 个人用户设置
 Route::get('/users/{user}', 'UsersController@show')->name('users.show');
 Route::get('/users/{user}/edit', 'UsersController@edit')->name('users.edit');
-Route::post('/users/{user}', 'UsersController@update')->name('users.update');
+Route::patch('/users/{user}', 'UsersController@update')->name('users.update');
